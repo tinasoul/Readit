@@ -59,6 +59,8 @@ Readit::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
 
   resources :pages
+
+  match 'search' => 'pages#search'
   
   resources :links do
     resources :comments
